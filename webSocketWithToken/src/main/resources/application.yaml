@@ -1,0 +1,100 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/herfa
+    username: springstudent
+    password: springstudent
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 10
+  #  datasource:
+  #    url: jdbc:mysql://trolley.proxy.rlwy.net:53734/railway?useSSL=false&allowPublicKeyRetrieval=true
+  #    username: root
+  #    password: YLWYGTCfWdSDOnLnbshXkgvKOQTNPUOA
+  #    driver-class-name: com.mysql.cj.jdbc.Driver
+  #    hikari:
+  #      maximum-pool-size: 10
+  #      connection-timeout: 30000
+  #      idle-timeout: 600000
+  #      max-lifetime: 1800000
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQLDialect
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: mf7373057@gmail.com  # Your full email address
+    password: cfhhrlxyhiikbucn
+    # The 16-character app password you generated
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          ssl:
+            trust: smtp.gmail.com
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+          allow8bitmime: true
+          sendpartial: true
+          # إعدادات إضافية
+          from: mf7373057@gmail.com
+
+
+
+  servlet:
+    multipart:
+      max-file-size: 500MB
+      max-request-size: 500MB
+
+
+
+application:
+  security:
+    jwt:
+      secret-key: 4bb6d1dfbafb64a681139d1586b6f1160d18159afd57c8c79136d7490630407c
+      access-token-expiration: 86400000
+      refresh-token-expiration: 604800000
+
+server:
+  port: 9994
+
+encryption:
+  salt:
+    rounds: 10
+
+jwt:
+  algorithm:
+    key: SuperSecureSecretKey
+  issuer: "eCommerce"
+  expiryInSeconds: 604800
+
+project:
+  poster: poster/
+
+base:
+  url: "http://localhost:9292"
+
+
+
+
+
+#  user
+#eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9:
+#  eyJST0xFIjoiVVNFUiIsImlzcyI6ImVDb21tZXJjZSIsIlVTRVJOQU1FIjoibWhtZG0iLCJleHAiOjE3NDY1MDE1NjZ9:
+#    IBjvpYdJfwz7uJAT1YBxbWDOm0_TZuOHVaMl2AN5q8E:
+
+
+#merchant
+#eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9:
+#  eyJST0xFIjoiTUVSQ0hBTlQiLCJpc3MiOiJlQ29tbWVyY2UiLCJVU0VSTkFNRSI6Im1obWQ3ODkiLCJleHAiOjE3NDY1MDE0NjB9:
+#    4n-gsTDUD_Mtb62xaJdH4-UV-6uWPpqoUHAjOJxGvbQ:
