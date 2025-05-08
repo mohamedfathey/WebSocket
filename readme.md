@@ -11,10 +11,9 @@ This repo contains **two WebSocket-based projects** built with **Spring Boot**, 
 
 
 ### 📂 Path:
- [Simple WebSocket Chat] (https://github.com/mohamedfathey/WebSocket/tree/main/webSocket)
+## [Simple WebSocket Chat](https://github.com/mohamedfathey/WebSocket/tree/main/webSocket)
 
 
----
 
 ## 🔐 Project 2 — Authenticated WebSocket Chat (JWT)
 
