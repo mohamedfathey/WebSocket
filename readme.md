@@ -11,7 +11,8 @@ This repo contains **two WebSocket-based projects** built with **Spring Boot**, 
 
 
 ### 📂 Path:
-`https://github.com/mohamedfathey/WebSocket/tree/main/webSocket`
+[Simple WebSocket Chat](https://github.com/mohamedfathey/WebSocket/tree/main/webSocket)
+
 
 ---
 
@@ -25,9 +26,8 @@ This repo contains **two WebSocket-based projects** built with **Spring Boot**, 
 - Stores undelivered messages in Map for offline users
 - Integrated with Spring Security
 
-### 📂 Path:
-`https://github.com/mohamedfathey/WebSocket/tree/main/webSocketWithToken`
-
+### 📂 Path:([])
+ [Authenticated WebSocket Chat](https://github.com/mohamedfathey/WebSocket/tree/main/webSocketWithToken)
 ---
 
 ## 🚀 How to Run
